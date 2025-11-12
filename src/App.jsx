@@ -1,9 +1,11 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './react-router-dom/Home'
-import About from './react-router-dom/About'
-import ProductDetail from './dynamic-routing/productDetail'
-import Products from './dynamic-routing/Products'
+// import Home from './react-router-dom/Home'
+import Navbar from './nested-routing/Navbar'
+// import About from './react-router-dom/About'
+// import ProductDetail from './dynamic-routing/productDetail'
+// import Products from './dynamic-routing/Products'
+// import Navbar from './nested-routing/Navbar'
 // import Basic from './FunctionalComponents/Basic'
 // import Home from './FunctionalComponents/Hooks/UseContext/Theme/Home'
 // import { ThemeProvider } from './FunctionalComponents/Hooks/UseContext/Theme/ThemeContext'
@@ -18,6 +20,11 @@ import Products from './dynamic-routing/Products'
 // import CallingFunction from './embeding-expression/CallingFunction'
 // import Conditional from './embeding-expression/conditional'
 // import Welcome from './embeding-expression/Welcome'
+import Home from './nested-routing/pages/Home'
+import About from './nested-routing/pages/About'
+import Services from './nested-routing/pages/Services'
+import Appdev from './nested-routing/pages/services/Appdev'
+import Webdev from './nested-routing/pages/services/Webdev'
 
 
 function App() {
@@ -64,11 +71,25 @@ function App() {
         </Routes>
       </div> */}
       {/* ------2. dynamic routing---- */}
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Products/>}/>
         <Route path='/products/:id' element={<ProductDetail/>}/>
+      </Routes> */}
+
+      {/* -----nested routing------ */}
+
+
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+         <Route path='/about' element={<About/>}/>
+         <Route path='/services' element={<Services/>}>
+         <Route path='web-dev' element={<Webdev/>}/>
+         <Route path='app-dev' element={<Appdev/>}/>
+       </Route>
       </Routes>
     </>
+
 
   )
 }
