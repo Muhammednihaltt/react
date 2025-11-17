@@ -1,4 +1,5 @@
 import React from 'react'
+import './welcome.css'
 
 const Welcome = () => {
 
@@ -6,7 +7,7 @@ const Welcome = () => {
 
   return (
     <div>
-      <h1>My Name is {name}</h1>
+      <h3>My Name is {name}</h3>
     </div>
   )
 }
