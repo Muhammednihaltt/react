@@ -26,9 +26,21 @@
 // import Appdev from './nested-routing/pages/services/Appdev'
 // import Webdev from './nested-routing/pages/services/Webdev'
 // import Person from "./embeding-expression/person"
-import SimpleForm from "./form/SimpleForm"
+// import SimpleForm from "./form/SimpleForm"
 // import AllProducts from "./react-keys/AllProducts"
 // import Items from "./react-keys/items"
+
+// import { Axios } from "axios"
+// import AxiosPost from "./axios/axiosPost"
+import BasicHookForm from "./form/react-hook-form/BasicHookForm"
+
+// import Session from "./session-storage/Session"
+
+// import AxiosGet from "./axios/AxiosGet"
+
+// import Crud from "./local-storage/crud"
+
+// import Form from "./form/form"
 
 
 
@@ -100,7 +112,23 @@ function App() {
 
       {/* <Items/>
       <AllProducts/> */}
-      <SimpleForm/>
+      {/* <SimpleForm/> */}
+
+     {/* <Form/> */}
+
+
+     {/* local storage  */}
+    {/* <Crud/> */}
+
+
+    {/* <AxiosGet/> */}
+
+
+    {/* <Session/> */}
+
+{/* 
+  <AxiosPost/> */}
+  <BasicHookForm/>
     </>
 
 
